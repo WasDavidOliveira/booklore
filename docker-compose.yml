@@ -21,6 +21,7 @@ services:
     volumes:
       - ./data:/app/data
       - ./books:/books
+      - ./financial:/financial
       - ./bookdrop:/bookdrop
     healthcheck:
       test: wget -q -O - http://localhost:6060/api/v1/healthcheck
